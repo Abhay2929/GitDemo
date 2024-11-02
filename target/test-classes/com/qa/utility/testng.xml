@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing" thread-count="5">
+<listeners>
+   <listener class-name="com.qa.utility.Reporting"></listener>
+</listeners>
+
+<test thread-count="5" name="Functional Testing">
+	<parameter name="Browser" value="Chrome"/>
+	<parameter name="Url" value="https://www.zomato.com/patna/biryani-mahal-2-fraser-road-area/order/verify"/>
+    <classes>
+      <class name="com.qa.testscripts.TC_Zomato_Payment"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
