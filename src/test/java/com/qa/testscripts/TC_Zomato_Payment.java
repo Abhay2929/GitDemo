@@ -124,7 +124,9 @@ public static void jsClick(WebDriver webDriver, String xpath) {
     // TODO Auto-generated method stub
     WebElement webElement= webDriver.findElement(By.xpath(xpath));
      JavascriptExecutor javaScriptExecutor = (JavascriptExecutor)webDriver;
-     javaScriptExecutor.executeScript("arguments[0].click()", webElement);      
+     javaScriptExecutor.executeScript("arguments[0].click()", webElement); 
+     System.out.println("test");
+     System.out.println("jira");
 }
 
 
